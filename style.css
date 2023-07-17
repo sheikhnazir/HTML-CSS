@@ -1,0 +1,183 @@
+.heading1 {
+    color: red;
+}
+
+h3 {
+    color: black;
+    border: 2px solid orange;
+    display: inline;
+    border-width: 4px;
+    border-bottom-color: blue;
+    border-top-color: blue;
+    /* border-bottom: 3px solid red; */
+    border-radius: 9px;
+}
+
+h2 {
+
+    border: 3px solid yellow;
+    display: block;
+    margin: 50px;
+    border-radius: 8px;
+    /* display: inline;  If i will do display inline, than margin top and margin bottom will not work*/
+
+    /* MARGIN SHORTHAND PROPERTY
+    If the margin property has four values:
+
+    margin: 25px 50px 75px 100px;
+    top margin is 25px
+    right margin is 50px
+    bottom margin is 75px
+    left margin is 100px */
+}
+
+.padding {
+    color: black;
+    border: 2px solid green;
+    display: block;
+    padding: 20px 0px 0px 20px;
+
+    /* Padding - Shorthand Property
+    If the padding property has four values:
+
+    padding: 25px 50px 75px 100px;
+    top padding is 25px
+    right padding is 50px
+    bottom padding is 75px
+    left padding is 100px */
+    height: 50px;
+    width: 10%;
+    background-color: powderblue;
+
+    /* All CSS Dimension Properties :->
+    Property	Description
+    height:	Sets the height of an element
+    max-height:	Sets the maximum height of an element
+    max-width:	Sets the maximum width of an element
+    min-height:	Sets the minimum height of an element
+    min-width:	Sets the minimum width of an element
+    width:	Sets the width of an element */
+}
+
+.box {
+    width: 150px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+    font-size: 21px;
+    outline: 5px solid yellow;
+
+    /* CSS Outline - Shorthand property
+    outline-width
+    outline-style (required)
+    outline-color */
+}
+
+/* position: static;
+HTML elements are positioned static by default.
+Static positioned elements are not affected by the top, bottom, left, and right properties.
+An element with position: static;
+is not positioned in any special way; it is always positioned according to the normal flow of the page: */
+
+
+/* position: fixed;
+An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same 
+place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+A fixed element does not leave a gap in the page where it would normally have been located. */
+
+
+/* position: relative;
+An element with position: relative; is positioned relative to its normal position.
+Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position.
+Other content will not be adjusted to fit into any gap left by the element. */
+
+/* .positioning{
+    width: 150px;
+    padding: 50px;
+    margin: 20px;
+    position:relative;
+    font-size: 21px;    left: 30px;
+    border: 10px solid green;
+    outline: 5px solid yellow;
+} */
+
+/* position: absolute;
+An element with position: absolute; is positioned relative to the nearest 
+positioned ancestor (instead of positioned relative to the viewport, like fixed).
+However; if an absolute positioned element has no positioned ancestors, 
+it uses the document body, and moves along with page scrolling. */
+
+.positioning {
+    position: relative;
+    left: 100px;
+    width: 400px;
+    height: 200px;
+    border: 3px solid #73AD21;
+}
+
+.absolute {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #73AD21;
+}
+
+/* #div1{
+    height: 20px;
+    background-color: #73AD21;
+    position: sticky;
+    top: 0;
+    text-align: center;
+}
+#div2{
+    height: 5000px;
+    background-color: brown;
+} */
+
+
+.parent{
+    width: 600px;
+    height: 300px;
+    background-color: red;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 25px;
+    position: relative;
+    
+
+.child1{
+    width: 100px;
+    height: 60px;
+    background-color: green;
+    position: absolute;
+    top: 0;
+}
+
+.child2{
+    width: 100px;
+    height: 60px;
+    background-color: yellow;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.child3{
+    width: 100px;
+    height: 60px;
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.child4{
+    width: 100px;
+    height: 60px;
+    background-color: pink;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
